@@ -95,9 +95,9 @@ int ListInsert(SeqList *L, int i, DataType x)
 
      *x = L->list[i];
      int k;
-     for(k = i; k < L->size - 1; k++)
+     for(k = i+1; k <= L->size - 1; k++)
      {
-         L->list[k-i] = L->list[k];
+         L->list[k-1] = L->list[k];
      }
 
      L->size -= 1;
