@@ -1,0 +1,15 @@
+digraph G {
+	rankdir=LR
+	nodesep = 0.5
+	size = "8,8"
+
+	/*
+	head[shape=plaintext, label="root"]
+
+	node1[shape=record, label="{<data> head | <^> ^ }"]
+
+	head -> node1
+	*/
+
+	data_m [shape=record, label="{<data> data | <next> next}"]
+}
